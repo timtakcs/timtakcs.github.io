@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
@@ -57,8 +59,12 @@
                     <p>
                         Created a welcoming website for new students to use to help them familiarize themselves with the school.
                     </p>
-                    <a id="link" href="#">Learn More</a>
+                    
                   </div>
+                  <div class = "linkdiv">
+                    <a id="link" href="#"><i class="fa fa-external-link"></i></a>
+
+                </div>
               </div>
               <div class="swiper-slide">Slide dd</div>
               <div class="swiper-slide">Slide 3</div>
@@ -75,16 +81,13 @@
                 effect: 'coverflow',
                 grabCursor: true,
                 centeredSlides: true,
-                // coverflowEffect: {
-                //     rotate: 50,
-                //     stretch: 0,
-                //     depth: 100,
-                //     modifier: 1,
-                //     // slideShadows: true,
-                // },
-                // pagination: {
-                //     el: '.swiper-pagination',
-                // },
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 200,
+                    modifier: 0.4,
+                    slideShadows: false,
+                },
                 slidesPerView: 3,
                 spaceBetween: 100,
                 centeredSlides: true,
