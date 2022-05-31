@@ -187,9 +187,55 @@
             });
           </script>
     </section>
+    <section class="contact-us" id="contact-us">
+        <h1>Contact Us</h1>
+        <hr>
+        <div class="mid">
+            <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
+                <div class="front">
+                    <div class="front-text">
+                        <form class="contact-form" onsubmit="sendEmail(); reset(); return false">
+                            <input type="text" id="name" placeholder="Name" required>
+                            <input type="email" id="email" placeholder="Email" required>
+                            <input type="text" id="phone" placeholder="Phone">
+                            <textarea id="message" rows="4" placeholder="How can we help?"></textarea>
+                            <button type="Submit">Send Message</button>
+                            <!-- <button class="back-to-card">Back to Card</button> -->
+                        </form>
+                    </div> 
+                    <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script>
+                        function sendEmail() {
+                            Email.send({
+                                Host : "smtp.elasticemail.com",
+                                Username : "katytxweb@gmail.com",
+                                // we should probably encrypt this just in case
+                                Password : "2E7B0716CC165DCDC3019B2C250DB112FF05",
+                                To : 'katytxweb@gmail.com',
+                                From : document.getElementById("email").value,
+                                Subject: "Form Contact",
+                                Body : "Name: " + document.getElementById("name").value
+                                    +  "Phone: " + document.getElementById("phone").value
+                                    +  "Message: " + document.getElementById("message").value
+                            }).then(
+                            message => alert(message)
+                            );
+                        }
+                    </script>
+                </div>
+                <div class="back">
+                    <img src="BusinessCard.png" alt="Card">
+                </div>
+            </div>
+        </div>
+    </section>
     <script>
         $(".business-card").click(function(){
-            $(".business-card").toggleClass("business-card-active");
+            $(".business-card").addClass("business-card-active");
+        });
+
+        $(".back-to-card").click(function(){
+            $(".business-card-active").toggleClass(".business-card");
         });
     </script>
 
@@ -227,6 +273,11 @@
             });
     };
     </script>
+
+<!-- 69FA63693BEE4A9E040D70CF11426C5D923AF1BAB78972DBC04B96FAA0CD944114FB0E9F18BD470830040277AC373ECF -->
+
+<!-- smtp key -->
+<!-- 2E7B0716CC165DCDC3019B2C250DB112FF05 -->
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
