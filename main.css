@@ -147,15 +147,15 @@ button:active {
     transition: all 0.3s ease-out;
 }
 
-.swiper-slide-active {
+/* .swiper-slide-active { */
     /* background-color: blue; */
     /* transition-property: background-color;
     transition-duration: 4s;
     transition-delay: 2s; */
     /* transition: all 5s ease-out; */
-    transform: scale(1.1);
-    transition: all 0.3s ease-in;
-}
+    /* transform: scale(1.1);
+    transition: all 0.3s ease-in; */
+/* } */
 
 .swiper-slide-active:hover {
     background-color: rgb(66, 66, 66);
