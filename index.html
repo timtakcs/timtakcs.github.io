@@ -24,7 +24,7 @@
         <div class="middle">
             <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
                 <div class="front">
-                    <div>
+                    <div class="front-text">
                         <h1>KTX WEB</h1>
                         <button class="button-center" onclick="autoScroll()">Projects</button>
                     </div> 
@@ -62,27 +62,96 @@
         <!--<h2>Projects</h2>-->
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- Website for new students -->
+                    <a class="link-slide" href="https://batyr0601.github.io/content/English/Main+Page.html">
+                        <div>
+                            <h3>
+                                Website for New Students
+                            </h3>
+                            <img src="https://lh3.googleusercontent.com/x-4Bk3g4bk5_LGBPnh6Ac5ojw3A7on6zLmZkkp3n1nJzmBfE0cpIfs20sfwMvkU7zWWwqvpbAb1tfEXoHpLUcg">
+                            <p>
+                                Created a welcoming website for new students to use to help them familiarize themselves with the school.
+                            </p>
+                        </div>
+                    </a>
+                    <div class = "linkdiv">
+                        <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                        <a id="link" href="https://batyr0601.github.io/content/English/Main+Page.html"><h2>VIEW PROJECT</h2></a>
+                    </div>
+              </div>
               <div class="swiper-slide">
-                  <div>
-                    <h3>
-                        Website for New Students
-                    </h3>
-                    <img src="https://lh3.googleusercontent.com/x-4Bk3g4bk5_LGBPnh6Ac5ojw3A7on6zLmZkkp3n1nJzmBfE0cpIfs20sfwMvkU7zWWwqvpbAb1tfEXoHpLUcg">
-                    <p>
-                        Created a welcoming website for new students to use to help them familiarize themselves with the school.
-                    </p>
-                    
-                  </div>
-                  <div class = "linkdiv">
-                    <a id="link" href="#"><i class="fa fa-external-link"></i></a>
-
+                  <!-- Mood Meter -->
+                <a class="link-slide" href="https://mood-meter1.herokuapp.com/tracker">
+                    <div>
+                        <h3>
+                            Mood Meter
+                        </h3>
+                        <img src="moodmeterlogo.png">
+                        <p>
+                            Made a friendly UI for an app to track your mood. It was created with the purpose of helping the mental health awareness initiative.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="https://mood-meter1.herokuapp.com/tracker"><h2>VIEW PROJECT</h2></a>
                 </div>
               </div>
-              <div class="swiper-slide">Slide dd</div>
-              <div class="swiper-slide">Slide 3</div>
-              <div class="swiper-slide">Slide 4</div>
-              <div class="swiper-slide">Slide 5</div>
-              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">
+                  <!-- Booking website -->
+                <a class="link-slide" href="#">
+                    <div>
+                        <h3>
+                            College Counselor Booking App
+                        </h3>
+                        <img src="https://lh3.googleusercontent.com/x-4Bk3g4bk5_LGBPnh6Ac5ojw3A7on6zLmZkkp3n1nJzmBfE0cpIfs20sfwMvkU7zWWwqvpbAb1tfEXoHpLUcg">
+                        <p>
+                            Built a webapp to create an organized communication channel between students, counserors, and college representatives.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="#"><h2>VIEW PROJECT</h2></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- SKINAV -->
+                <a class="link-slide" href="https://github.com/timtakcs/skiingApp">
+                <div>
+                    <h3>
+                        SKINAV
+                    </h3>
+                    <img src="SKINAVicon.png">
+                    <p>
+                        An iPhone app created to help you navigate the confusing world of ski resort maps.
+                    </p>
+                </div>
+            </a>
+            <div class = "linkdiv">
+                <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                <a id="link" href="https://github.com/timtakcs/skiingApp"><h2>VIEW PROJECT</h2></a>
+            </div>
+            </div>
+              <div class="swiper-slide">
+                  <!-- Diced -->
+                <a class="link-slide" href="#">
+                    <div>
+                        <h3>
+                            DICED
+                        </h3>
+                        <img src="dicedlogo.png">
+                        <p>
+                            An IOS app designed to help you keep track of your progress in the gym.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="#"><h2>VIEW PROJECT</h2></a>
+                </div>
+              </div>
             </div>
             <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
@@ -114,7 +183,7 @@
     </section>
     <script>
         $(".business-card").click(function(){
-            $(".business-card").addClass("business-card-active");
+            $(".business-card").toggleClass("business-card-active");
         });
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>

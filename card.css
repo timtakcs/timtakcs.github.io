@@ -36,11 +36,12 @@
   }
   
   .front{
-    background-color: red;
+    background-color: #e9e7e3;
     transform: perspective(600px) rotateX(180deg);
     border-radius: 20px;
+    text-align: center;
   }
-  
+
   .back{
     background: rgba(0,0,0,.7);
     transform: perspective(600px) rotateX(0deg);
@@ -48,7 +49,6 @@
   }
 
   .back:hover{
-    transform: scale(1.05, 1.05);
     cursor: pointer;
   }
 
