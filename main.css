@@ -131,9 +131,13 @@ button:active {
     top: 0.375em;
 }
 
+.projects {
+    text-align: center;
+}
+
 .swiper {
     width: 100%;
-    height: 80%;
+    height: 70%;
 
     top: 50%;
   -ms-transform: translateY(-50%);
