@@ -164,7 +164,7 @@ button:active {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    background-color: black;
+    /* background-color: black; */
     -webkit-align-items: center;
     align-items: center;
     transition: all 5s ease-out;
@@ -244,7 +244,6 @@ button:active {
 .swiper-slide img {
     display: block;
     width: 80%;
-    height: 80%;
     top: 0;
     left: 0;
     transform: translate(10%, 0); 
@@ -314,3 +313,8 @@ button:active {
     outline: none;
     border-radius: 10px;
 }
+
+.imgThing {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }

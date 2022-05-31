@@ -50,6 +50,7 @@
 
   .back:hover{
     cursor: pointer;
+    
   }
 
   .business-card-active .front{
@@ -59,4 +60,5 @@
   .business-card-active .back{
     transform: perspective(600px) rotateX(-180deg);
   }
+
   
