@@ -151,12 +151,12 @@ button:active {
     font-size: 18px;
     /* color: #e9e7e3; */
     border-color: rgb(178, 176, 176);
-    background-color: black;
-
+    
     /* Center slide text vertically */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
+    user-select: none;
     display: flex;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -164,6 +164,7 @@ button:active {
     justify-content: center;
     -webkit-box-align: center;
     -ms-flex-align: center;
+    background-color: black;
     -webkit-align-items: center;
     align-items: center;
     transition: all 5s ease-out;
@@ -174,19 +175,19 @@ button:active {
 }
 
 .link-slide {
-    color: black;
     text-decoration: none;
     display: flex;
     justify-content: center;
+    color: black;
 }
 
-.swiper-slide-active {
+.swiper-slide-active * {
     /* background-color: rgb(55, 55, 55); */
     transition-property: background-color;
     transition-duration: 150ms;
     transition-delay: 150ms;
     transition: all 150ms ease-out;
-    color: white;
+    color: white !important;
 }
 /* 
 .swiper-slide-active:hover {
@@ -244,8 +245,11 @@ button:active {
     display: block;
     width: 80%;
     height: 80%;
+    top: 0;
+    left: 0;
+    transform: translate(10%, 0); 
     object-fit: cover;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .contact-us {
