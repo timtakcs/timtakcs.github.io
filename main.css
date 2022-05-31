@@ -133,6 +133,8 @@ button:active {
 
 .projects {
     text-align: center;
+    color: white;
+    background-color: black;
 }
 
 .swiper {
@@ -149,6 +151,7 @@ button:active {
     font-size: 18px;
     /* color: #e9e7e3; */
     border-color: rgb(178, 176, 176);
+    background-color: black;
 
     /* Center slide text vertically */
     display: -webkit-box;
@@ -165,8 +168,8 @@ button:active {
     align-items: center;
     transition: all 5s ease-out;
 
-    border-left: 1px solid;
-    border-right: 1px solid;
+    /* border-left: 1px solid;
+    border-right: 1px solid; */
     /* border-bottom: 1px solid; */
 }
 
@@ -183,6 +186,7 @@ button:active {
     transition-duration: 150ms;
     transition-delay: 150ms;
     transition: all 150ms ease-out;
+    color: white;
 }
 /* 
 .swiper-slide-active:hover {
@@ -225,7 +229,7 @@ button:active {
 }
 
 .swiper-button-next:after {
-    color: #000;
+    color: white;
     /* background-color: #63616C;
     padding: 10px;
     margin-right: 10px;
@@ -233,7 +237,7 @@ button:active {
 }
 
 .swiper-button-prev:after {
-    color: #000;
+    color: white;
 }
 
 .swiper-slide img {
