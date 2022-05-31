@@ -5,23 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="card.css">
     <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <link
     rel="stylesheet"
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
-
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
     <title>colegio</title>
 </head>
+
 <body>
     <section class = "hero">
-        <h1>KTX WEB</h1>
-        <button class="button-center" onclick="autoScroll()">Projects</button>
-
+        <div class="middle">
+            <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
+                <div class="front">
+                    <div>
+                        <h1>KTX WEB</h1>
+                        <button class="button-center" onclick="autoScroll()">Projects</button>
+                    </div> 
+                </div>
+                <div class="back">
+                    <img src="BusinessCard.png" alt="Card">
+                </div>
+            </div>
+        </div>
     </section>
     <section class = "about-us">
         <h2>About us</h2>
@@ -100,5 +112,12 @@
             });
           </script>
     </section>
+    <script>
+        $(".business-card").click(function(){
+            $(".business-card").addClass("business-card-active");
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+
 </body>
 </html>
