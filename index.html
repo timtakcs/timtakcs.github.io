@@ -15,13 +15,12 @@
     href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-
     <title>colegio</title>
 </head>
 
 <body>
     <section class = "hero">
-        <div class="middle">
+        <!-- <div class="middle">
             <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
                 <div class="front">
                     <div class="front-text">
@@ -33,29 +32,36 @@
                     <img src="BusinessCard.png" alt="Card">
                 </div>
             </div>
+        </div> -->
+        <div class="middle">
+            <div class="front-text">
+                <h1>KTX WEB</h1>
+                <button class="button-center" onclick="autoScroll()">Projects</button>
+            </div> 
         </div>
     </section>
     <section class = "about-us">
-        <h2>About us</h2>
-        <hr>
-        <p>We are three college freshmen studying computer science. We have been programming for over 3 years building both websites and apps.</p>
-        <div class="line-up">
-            <div class="batyr">
-                <img src="https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_1024x.png?v=1619393997" alt="Batyr Zhangabylov">
-                <h3>Batyr Zhangabylov</h3>
-                <h4>Leonardo</h4>
+        <div class="container">
+            <h2>About us</h2>
+            <hr>
+            <p>We are three college freshmen studying computer science. We have been programming for over 3 years building both websites and apps.</p>
+            <div class="line-up">
+                <div class="batyr">
+                    <img src="https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_1024x.png?v=1619393997" alt="Batyr Zhangabylov">
+                    <h3>Batyr Zhangabylov</h3>
+                    <h4>Leonardo</h4>
+                </div>
+                <div class="timur">
+                    <img src="https://bbts1.azureedge.net/images/p/full/2021/03/0e5bf079-b0cb-41f6-912b-dfdc72c80732.jpg" alt="Timur Takhtarov">
+                    <h3>Timur Takhtarov</h3>
+                    <h4>Donatello</h4>
+                </div>
+                <div class="nirav">
+                    <img src="https://i.pinimg.com/736x/90/a9/f2/90a9f2a7debb6363471a1965ea1096eb.jpg" alt="Nirav Koley">
+                    <h3>Nirav Koley</h3>
+                    <h4>A rat</h4>
+                </div>
             </div>
-            <div class="timur">
-                <img src="https://bbts1.azureedge.net/images/p/full/2021/03/0e5bf079-b0cb-41f6-912b-dfdc72c80732.jpg" alt="Timur Takhtarov">
-                <h3>Timur Takhtarov</h3>
-                <h4>Donatello</h4>
-            </div>
-            <div class="nirav">
-                <img src="https://i.pinimg.com/736x/90/a9/f2/90a9f2a7debb6363471a1965ea1096eb.jpg" alt="Nirav Koley">
-                <h3>Nirav Koley</h3>
-                <h4>A rat</h4>
-            </div>
-
         </div>
     </section>
     <section class = "projects" id="projects">
@@ -186,7 +192,44 @@
             $(".business-card").toggleClass("business-card-active");
         });
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
 
+    <script>
+        window.onload= function() {
+            Particles.init({
+            // normal options
+            selector: '.background',
+            maxParticles: 150,
+            connectParticles: true,
+  
+            // options for breakpoints
+            responsive: [
+                {
+                breakpoint: 768,
+                options: {
+                    maxParticles: 200,
+                    color: '#48F2E3',
+                    connectParticles: true
+                }}, {
+                breakpoint: 425,
+                options: {
+                    maxParticles: 100,
+                    connectParticles: true
+                }
+                }, {
+                breakpoint: 320,
+                options: {
+                    maxParticles: 0
+            
+            // disables particles.js
+                }
+                }
+            ]
+            });
+    };
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <canvas class="background"></canvas>
 </body>
 </html>
