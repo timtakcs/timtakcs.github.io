@@ -246,6 +246,7 @@ button:active {
     height: 80%;
     object-fit: cover;
     border-radius: 20px;
+    margin: 0;
 }
 
 .contact-us {
