@@ -154,9 +154,13 @@ h1 {
     color: #bab8b4;
 }
 
+.profile {
+    display: flex;
+}
+
 div.reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
     transition: 0.8s all ease;
 }
