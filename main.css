@@ -48,6 +48,7 @@ h1 {
     font-family: retroica !important;
     font-weight: 100;
     padding-top: 1em;
+    padding-bottom: 1.5em;
     font-size: 4.35em;
     user-select: none;
 }
@@ -325,7 +326,6 @@ button:active {
     height: 100vh;
     background-color: black;
     display: flex;
-    justify-content: center;
     align-items: center;  
     flex-direction: column;
 }
