@@ -25,6 +25,24 @@ h1 {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
+section {
+    height: 100vh;
+    margin: 0px;
+}
+
+.timur {
+    padding: 5vh;
+    color: #e9e7e3;
+}
+
+/* .nirav {
+    margin-bottom: 2vh;
+}
+
+.batyr {
+    margin-top: 2vh;
+} */
+
 .projects-title {
     color: #f8f8ff;
     font-family: retroica;
@@ -80,6 +98,16 @@ h1 {
     text-align: center;
 }
 
+.description {
+    color: #e9e7e3;
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.1em;
+    text-align: center;
+
+
+    
+}
+
 .link-slide h3 {
     font-family: 'Montserrat', sans-serif !important; 
     font-weight: 100;
@@ -96,7 +124,9 @@ h1 {
     font-size: 1.4em;
     text-decoration: underline;
 }
-
+.btnz {
+    cursor: pointer;
+}
 .about-us {
     background-color: rgb(103, 103, 103);
     color: #e9e7e3;
@@ -109,10 +139,42 @@ h1 {
     /* display: inline-block; */
 }
 
+.title-about-p {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.1em;
+    color: #e9e7e3;
+
+}
+
+.flex-about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content;
     grid-gap: 0ch;
+    height: 100vh;
+}
+
+.flex-desc {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.flex-desc-title {
+    flex-grow: 1;
+
+}
+
+.flex-desc-text {
+    flex-grow: 100;
 }
 
 .grid-child {
@@ -136,8 +198,8 @@ h1 {
 }
 
 .about-us .line-up {
-    padding-top: 50px;
-    left: 30%;
+    /* padding-top: 50px; */
+    /* left: 30%; */
     align-items: center;  
     flex-direction: column;
     text-align: center;  
@@ -151,12 +213,17 @@ h1 {
 }
 
 .about-us button:hover {
-    color: #bab8b4;
+    filter: brightness(75%);
+    border-radius: 1em;
+}
+
+.profile {
+    display: flex;
 }
 
 div.reveal {
     position: relative;
-    transform: translateY(150px);
+    transform: translateY(50px);
     opacity: 0;
     transition: 0.8s all ease;
 }
@@ -173,7 +240,6 @@ div.reveal.active {
     left: 0;
     z-index: -1;
     background-color: #f8f8ff;
-    height: 500%;
 }
 
 .line-up div {
@@ -415,3 +481,37 @@ div.reveal.active {
     margin-top: 1em;
     margin-bottom: 1em;
   }
+
+  .about-flex-cont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+
+  .about-flex-title {
+      flex-grow: 1;
+  }
+
+  .about-flex-child {
+      flex-grow: 10;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+  }
+  
+.about-flex-left {
+ flex-grow: 1;
+ flex: 1 ;
+  /* width: 0; */
+}
+
+.about-flex-right {
+    flex-grow: 1;
+ flex: 1 ;
+}
+
+.line-up {
+    display: flex;
+}
