@@ -5,22 +5,25 @@ function autoScroll() {
 }
 
 function reveal() {
-    var reveals = document.querySelectorAll(".reveal");
+    var reveals = document.querySelectorAll('.reveal');
 
-    for (var i = 0; i < reveals.lengthl; i++) {
+    console.log(reveals);
+
+    for (var i = 0; i < reveals.length; i++) {
         var windowHeight = widner.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = 150;
 
+        console.log(1);
+
         if (elementTop < windowHeight - elementVisible) {
-            reveals[i].classList.add("active");
+            reveals[i].classList.add('active');
         }
         else {
-            reveals[i].classList.remove("active")
+            reveals[i].classList.remove('active');
         }
     }
 }
 
-window.addEventListener("scroll", reveal);
-reveal();
+window.addEventListener('scroll', reveal());
 
