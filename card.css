@@ -11,7 +11,7 @@
     }
 
   .business-card{
-    width: 55vw;
+    width: 60vw;
     height: calc((55vw/3.5)*2);
     /* box-shadow: 8px 8px 40px rgba(0,0,0,.3); */
     border-radius: 20px;
