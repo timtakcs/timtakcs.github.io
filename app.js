@@ -5,12 +5,10 @@ function autoScroll() {
 }
 
 function reveal() {
-    var reveals = document.querySelectorAll('.reveal');
-
-    console.log(reveals);
+    const reveals = document.getElementsByClassName('reveal');
 
     for (var i = 0; i < reveals.length; i++) {
-        var windowHeight = widner.innerHeight;
+        var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
         var elementVisible = 150;
 
@@ -23,7 +21,12 @@ function reveal() {
             reveals[i].classList.remove('active');
         }
     }
+
+    
 }
 
-window.addEventListener('scroll', reveal());
+window.addEventListener('scroll', reveal);
+
+
+
 
