@@ -153,6 +153,7 @@ h1 {
     left: 0;
     z-index: -1;
     background-color: #f8f8ff;
+    height: 500%;
 }
 
 .line-up div {
