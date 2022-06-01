@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Urbanist:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 @import url('http://fonts.cdnfonts.com/css/retroica');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
 * {
     margin: 0;
@@ -19,13 +21,16 @@ html {
 }
 
 h1 {
-    font-size: 100px;
+    font-size: 6.25em;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
 }
 
 .projects-title{
     color: #f8f8ff;
-    font-family: Montserrat;
+    font-family: retroica;
+    font-weight: 100;
+    padding-top: 0.5em;
+    font-size: 5.4em;
 }
 
 .title{
@@ -46,6 +51,23 @@ h1 {
 
 .front-text{
     text-align: center;
+}
+
+.link-slide h3 {
+    font-family: 'Montserrat', sans-serif !important; 
+    font-weight: 100;
+    font-size: 1.2em;
+}
+
+.link-slide p {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.1em;
+}
+
+.link-slide h2 {
+    font-family: 'Lato', sans-serif !important;
+    font-size: 1.4em;
+    text-decoration: underline;
 }
 
 .about-us {
@@ -201,7 +223,7 @@ button:active {
     transition-duration: 150ms;
     transition-delay: 150ms;
     transition: all 150ms ease-out;
-    color: white !important;
+    color: #e9e7e3 !important;
 }
 /* 
 .swiper-slide-active:hover {
@@ -210,9 +232,8 @@ button:active {
 
 } */
 
-.swiper-slide-active:hover img {
-    background-color: rgb(0,0,0);
-    opacity: 0.3;
+.swiper-slide:hover img {
+    filter: brightness(50%)
 }
 
 .linkdiv {
@@ -223,12 +244,12 @@ button:active {
     opacity: 0
 }
 
-.swiper-slide-active:hover #link {
+.swiper-slide:hover #link {
     opacity: 1;
     font-style: normal;
-    color: black;
+    color: #e9e7e3;
     transition: all 150ms ease-in;
-    text-decoration: none; 
+    text-decoration: underline; 
 }
 
 .swiper-wrapper h3 {
