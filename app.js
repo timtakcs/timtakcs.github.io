@@ -1,6 +1,6 @@
 
-function autoScroll() {
-    const element = document.getElementById("projects");
+function autoScroll(section) {
+    const element = document.getElementById(section);
     element.scrollIntoView({behavior: "smooth", block: "end", inline: "nearest"});
 }
 
