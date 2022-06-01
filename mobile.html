@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="card.css">
+    <script src="app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>colegio</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</head>
+<section style="height:100vh;" class = "hero">
+    <div class="middle">
+        <div class="front-text">
+            <h1 class="title-mob">Mobile version coming soon</h1>
+        </div> 
+    </div>
+    <script>
+        window.onload= function() {
+            Particles.init({
+            // normal options
+            selector: '.background',
+            maxParticles: 150,
+            connectParticles: true,
+  
+            // options for breakpoints
+            responsive: [
+                {
+                breakpoint: 768,
+                options: {
+                    maxParticles: 200,
+                    color: '#48F2E3',
+                    connectParticles: true
+                }}, {
+                breakpoint: 425,
+                options: {
+                    maxParticles: 100,
+                    connectParticles: true
+                }
+                }, {
+                breakpoint: 320,
+                options: {
+                    maxParticles: 0
+            
+            // disables particles.js
+                }
+                }
+            ]
+            });
+    };
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <canvas class="background"></canvas>
+</section>
+
+</body>
+</html>
