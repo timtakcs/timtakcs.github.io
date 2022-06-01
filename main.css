@@ -60,13 +60,20 @@ h1 {
     color: #1a191e;
 }
 
+.title-mob{
+    font-family: retroica;
+    user-select: none;
+    margin-bottom: 0.1em;
+    color: #1a191e;
+    font-size: 1em;
+}
+
 .hero {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;  
     flex-direction: column;
-    
 }
 
 .front-text{
@@ -138,8 +145,6 @@ h1 {
     transform: translateY(0);
     opacity: 1;
 }
-
-
 
 .background {
     position:absolute;
