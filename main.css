@@ -220,7 +220,7 @@ section {
 }
 
 .profile {
-    display: flex;
+    /* display: flex; */
 }
 
 div.reveal {
@@ -244,9 +244,9 @@ div.reveal.active {
     background-color: #f8f8ff;
 }
 
-.line-up div {
+/* .line-up div {
     width: 300px;
-}
+} */
 
 .about-us img {
     width: 100px;
@@ -489,6 +489,7 @@ div.reveal.active {
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 100vh
   }
 
   .about-flex-title {
