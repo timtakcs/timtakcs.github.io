@@ -128,7 +128,7 @@ section {
     cursor: pointer;
 }
 .about-us {
-    background-color: rgb(103, 103, 103);
+    background-color: #828081;
     color: #e9e7e3;
     height: 100vh;
     /* justify-content: center;
@@ -210,11 +210,13 @@ section {
     background-color: rgb(103, 103, 103);
     border: none;
     font-size: 25px;
+    transition-duration: 250ms;
 }
 
 .about-us button:hover {
     filter: brightness(75%);
     border-radius: 1em;
+    transition-duration: 250ms;
 }
 
 .profile {
@@ -416,7 +418,7 @@ div.reveal.active {
 
 .contact-us {
     height: 100vh;
-    background-color: black;
+    background-color: #1a191e;
     display: flex;
     align-items: center;  
     flex-direction: column;
