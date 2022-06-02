@@ -258,6 +258,7 @@ div.reveal.active {
     left: 0;
     z-index: -1;
     background-color: #f8f8ff;
+    min-height: 1200px;
 }
 
 /* .line-up div {

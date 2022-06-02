@@ -17,13 +17,261 @@
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <title>colegio</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('N5mmEGXfQKT9kecsp');
+        })();
+    </script>
 </head>
-<section style="height:100vh;" class = "hero">
-    <div class="middle">
-        <div class="front-text">
-            <h1 class="title-mob">Mobile version coming soon</h1>
-        </div> 
-    </div>
+
+<body>
+    <section class = "hero">
+        <!-- <div class="middle">
+            <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
+                <div class="front">
+                    <div class="front-text">
+                        <h1>KTX WEB</h1>
+                        <button class="button-center" onclick="autoScroll()">Projects</button>
+                    </div> 
+                </div>
+                <div class="back">
+                    <img src="BusinessCard.png" alt="Card">
+                </div>
+            </div>
+        </div> -->
+        <div class="middle">
+            <div class="front-text">
+                <h1 class="title">KTX WEB</h1>
+                <button class="button-center" onclick="autoScroll('projects')">Projects</button>
+            </div> 
+        </div>
+    </section>
+    <section class = "projects" id="projects">
+        <h1 class="projects-title">PROJECTS</h1>
+        <div class="swiper mySwiper reveal">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <!-- Website for new students -->
+                    <a class="link-slide" href="https://batyr0601.github.io/content/English/Main+Page.html">
+                        <div>
+                            <h3>
+                                Website for New Students
+                            </h3>
+                            <img class="imgThing" src="WNSSSS.png">
+                            <p>
+                                (2019-2022)
+                                <br><br>
+                                We made a welcoming website for new students at our school to help familiarize them with the building and culture.
+                            </p>
+                        </div>
+                    </a>
+                    <div class = "linkdiv">
+                        <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                        <a id="link" href="https://batyr0601.github.io/content/English/Main+Page.html"><h2>VIEW PROJECT</h2></a>
+                    </div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- Mood Meter -->
+                <a class="link-slide" href="https://mood-meter1.herokuapp.com/tracker">
+                    <div>
+                        <h3>
+                            Mood Meter
+                        </h3>
+                        <img class="imgThing" src="moodmeterlogo.png">
+                        <p>
+                            (August 2021)
+                            <br><br>
+                            We made an online mood tracker to support mental health awareness for the IOWA APPTITUDE competition winning first place.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="https://mood-meter1.herokuapp.com/tracker"><h2>VIEW PROJECT</h2></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- Booking website -->
+                <a class="link-slide" href="#">
+                    <div>
+                        <h3>
+                            College Counselor Booking App
+                        </h3>
+                        <img class="imgThing" src="unnamed.jpg">
+                        <p>
+                            (2021-2022)
+                            <br><br>
+                            Built a webapp to create an organized communication channel between students, counserors, and college representatives.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="#"><h2>VIEW PROJECT</h2></a>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                  <!-- SKINAV -->
+                <a class="link-slide" href="https://github.com/timtakcs/skiingApp">
+                <div>
+                    <h3>
+                        SKINAV
+                    </h3>
+                    <img class="imgThing" src="SKINAVicon.png">
+                    <p>
+                        (2021-2022)
+                        <br><br>
+                        An IOS app created from scratch to help navigate the confusing world of ski resort maps.
+                    </p>
+                </div>
+            </a>
+            <div class = "linkdiv">
+                <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                <a id="link" href="https://github.com/timtakcs/skiingApp"><h2>VIEW PROJECT</h2></a>
+            </div>
+            </div>
+              <div class="swiper-slide">
+                  <!-- Diced -->
+                <a class="link-slide" href="#">
+                    <div>
+                        <h3>
+                            DICED
+                        </h3>
+                            <img style="border: 2px solid white;" class="imgThing" src="dicedlogo.png">
+                        <p>
+                            (2021-2022)
+                            <br><br>
+                            An IOS app created from scratch to help you keep track of your progress in the gym.
+                        </p>
+                    </div>
+                </a>
+                <div class = "linkdiv">
+                    <!-- <a id="link" href="#"><i class="fa fa-external-link"></i></a> -->
+                    <a id="link" href="#"><h2>VIEW PROJECT</h2></a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+          <script>
+            const swiper = new Swiper(".mySwiper", {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                coverflowEffect: {
+                    rotate: 0,
+                    stretch: 0,
+                    depth: 800,
+                    modifier: 0.5,
+                    slideShadows: false,
+                },
+                slidesPerView: 3,
+                spaceBetween: 200,
+                centeredSlides: true,
+                loop: false,
+                
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+            });
+          </script>
+    </section>
+    <section class = "about-us">
+        <div class="about-flex-cont">
+            <div class="about-flex-title">
+                <h1 class="title-about">ABOUT US</h1>
+            </div>
+            <div class="about-flex-child">
+                <div class="about-flex-left">
+                    <div class="description">
+                        <hr>
+                        <br>
+                        <p class="title-about-p">We are three college freshmen studying computer science, currently based in Houston, TX. We have been building apps and websites for over 4 years and are passionate about new technologies, both front-end and back-end.</p>
+                        <br>
+                        <p class="title-about-p">A website is the face of your business on the web and can create a whole new channel for customers. We are interested in ambitious projects for your business or yourself to help you increase your web presence.</p>
+                        <br>
+                        <button class="btnz" onclick="autoScroll('contact-us')"><p>If you are interested, shoot us a message!</p></button>
+                        <br>
+                        <hr>
+                    </div>
+                </div>
+                <div class="about-flex-right">
+                    <div class="line-up reveal">
+
+                            <div class="batyr profile">
+                                <div>
+                                    <img src="https://cdn.shopify.com/s/files/1/2528/8830/products/Leonardo566pin_1024x.png?v=1619393997" alt="Batyr Zhangabylov">
+                                    <h3>Batyr Zhangabylov</h3>
+                                </div>
+                                <h4>Leonardo</h4>
+                            </div>
+                            <div class="timur profile">
+                                <div>
+                                    <img src="https://bbts1.azureedge.net/images/p/full/2021/03/0e5bf079-b0cb-41f6-912b-dfdc72c80732.jpg" alt="Timur Takhtarov">
+                                    <h3>Timur Takhtarov</h3>
+                                </div>
+                                <h4>Donatello</h4>
+                            </div>
+                            <div class="nirav profile">
+                                <div>
+                                    <img src="https://i.pinimg.com/736x/90/a9/f2/90a9f2a7debb6363471a1965ea1096eb.jpg" alt="Nirav Koley">
+                                    <h3>Nirav Koley</h3>
+                                </div>
+                                <h4>A rat</h4>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-us" id="contact-us">
+        <h1 class="title-contact">CONTACT US</h1>
+
+        <div class="mid reveal">
+            <div class="business-card" data-tilt data-tilt-full-page-listening data-tilt-max="5">
+                <div class="front">
+                    <div class="front-text">
+                        <form id='contact-form' name='contact-form' class="contact-form" onsubmit="sendEmail(); reset(); return false">
+                            <input type="text" name='name' id="name" placeholder="Name" required>
+                            <input type="email" name='email' id="email" placeholder="Email" required>
+                            <input type="text" name='phone' id="phone" placeholder="Phone">
+                            <textarea name='message' id="message" rows="4" placeholder="How can we help?"></textarea>
+                            <button type="Submit">Send Message</button>
+                            <!-- <button class="back-to-card">Back to Card</button> -->
+                        </form>
+                    </div> 
+                    <script src=""></script>
+                    <script>
+                        function sendEmail() {
+                            emailjs.sendForm('service_3v8v9ua','template_02jeqto', '#contact-form')
+                                .then(function() {
+                                    console.log('SUCCESS!');
+                                }, function(error) {
+                                    console.log('FAILED...', error);
+                                });
+                        }
+                    </script>
+                </div>
+                <div class="back">
+                    <img src="BusinessCard.png" alt="Card">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        $(".business-card").click(function(){
+            $(".business-card").addClass("business-card-active");
+        });
+
+        $(".back-to-card").click(function(){
+            $(".business-card-active").toggleClass(".business-card");
+        });
+    </script>
+
     <script>
         window.onload= function() {
             Particles.init({
@@ -38,7 +286,7 @@
                 breakpoint: 768,
                 options: {
                     maxParticles: 200,
-                    color: '#48F2E3',
+                    color: "000000",
                     connectParticles: true
                 }}, {
                 breakpoint: 425,
@@ -58,9 +306,17 @@
             });
     };
     </script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        if (screen.height <= screen.width) {
+            document.location = "index.html";
+        }
+    </script>
     <canvas class="background"></canvas>
-</section>
-
 </body>
 </html>
+
+
+    
